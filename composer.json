@@ -1,0 +1,22 @@
+{
+    "name": "bruno/landing-page-tools",
+    "description": "Plugin Landing Page Tools",
+    "type": "project",
+    "require": {
+        "giacocorsiglia/wordpress-stubs": "^5.1",
+        "paulthewalton/acf-stubs": "^5.8"
+    },
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "LPT\\Includes\\": "includes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bruno Lima",
+            "email": "brunolimadevelopment@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

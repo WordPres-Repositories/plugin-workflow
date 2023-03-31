@@ -1,0 +1,43 @@
+<?php
+/**
+ * Plugin Name:     Landing Page Tools
+ * Plugin URI:      PLUGIN SITE HERE
+ * Description:     PLUGIN DESCRIPTION HERE
+ * Author:          YOUR NAME HERE
+ * Author URI:      YOUR SITE HERE
+ * Text Domain:     landing-page-tools
+ * Domain Path:     /languages
+ * Version:         1.0.0
+ *
+ * @package         Landing_Page_Tools
+ */
+
+// Your code starts here.
+defined('ABSPATH') || exit;
+
+class Plugin 
+{
+    public function activate() 
+    {
+        // Ao ativar o plugin automaticamente será feito uma refresh nos links permanentes.
+        flush_rewrite_rules();
+    }
+
+    public function deactivate() 
+    {   // Ao desativar o plugin automaticamente será feito uma refresh nos links permanentes.
+        flush_rewrite_rules();
+    }
+}
+
+if (class_exists('Plugin')) {
+    // Define uma constante chamada: LPT_PLUGIN_FILE
+    define('LPT_PLUGIN_FILE', __FILE__); // Pega o caminho completo do arquivo.
+
+    $plugin = new Plugin();
+}
+
+// activation
+register_activation_hook(LPT_PLUGIN_FILE, array($plugin, 'activate'));
+
+// deactivation
+register_deactivation_hook(LPT_PLUGIN_FILE, array($plugin, 'deactivate'));

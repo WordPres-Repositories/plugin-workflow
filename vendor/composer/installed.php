@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'bruno/landing-page-tools',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => NULL,
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'bruno/landing-page-tools' => array(
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'giacocorsiglia/wordpress-stubs' => array(
+            'pretty_version' => 'v5.1.1',
+            'version' => '5.1.1.0',
+            'reference' => '1c6f011f5c241bab7293315d7fb7fca27fe79473',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../giacocorsiglia/wordpress-stubs',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'paulthewalton/acf-stubs' => array(
+            'pretty_version' => '5.8.7',
+            'version' => '5.8.7.0',
+            'reference' => '722096c127186c41ac98395b418195d1db9cf576',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../paulthewalton/acf-stubs',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
